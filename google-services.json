@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "555684743181",
+    "firebase_url": "https://top-10-messages.firebaseio.com",
+    "project_id": "top-10-messages",
+    "storage_bucket": "top-10-messages.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:555684743181:android:c135aff8f2dd77f6",
+        "android_client_info": {
+          "package_name": "com.mps.mobileapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "555684743181-ige3ehgr96bopubugpjt24pmcf8d9te2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDitodmICqCB2pPYhIInA2xLeEMu8FsHYY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

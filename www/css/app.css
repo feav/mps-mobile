@@ -1,0 +1,1156 @@
+/* Your app styles here */
+
+@font-face {
+    font-family: 'Trebuchet MS';
+    font-style: normal;
+    src: url(../fonts/Trebuchet-MS.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'easports';
+    src: url('../fonts//EASPORTS.woff2') format('woff2'), url('../fonts//EASPORTS.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.page *,
+.ios .navbar .title {
+    font-family: 'Trebuchet MS';
+}
+
+.ios .page {
+    background: #ffffff;
+}
+
+.ios .navbar {
+    height: 56px;
+    font-size: 17px;
+    background: #f7f7f8;
+}
+
+.ios .navbar~.page-content,
+.ios .navbar~:not(.no-navbar) .page-content {
+    padding-top: 56px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.ios .navbar .title,
+.ios .navbar b {
+    font-weight: 400;
+}
+
+.text-white,
+.md .legal-notice a,
+.ios .legal-notice a,
+span.the-title,
+.ios .navbar .title {
+    color: #fff;
+}
+
+.md .panel-left .page,
+.ios .panel-left .page,
+.page.md .panel-left,
+.ios .navbar-inner {
+    background: #1A70BB;
+}
+
+.menu-left {
+    border-top: 2px solid #fff;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+.menu-left ul {
+    margin: 0;
+    padding: 0;
+}
+
+.menu-left li {
+    border-bottom: 2px solid #fff;
+    width: 100%;
+    padding: 15px;
+}
+
+.menu-left .icon {
+    width: 20px;
+    display: inline-block;
+    margin-right: 15px;
+    vertical-align: middle;
+}
+
+.menu-left li a {
+    text-transform: uppercase;
+    font-size: 11px;
+    color: #fff;
+}
+
+span.the-title {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.navbar-inner .title,
+.md .navbar .title,
+.ios .navbar .title {
+    width: 100%;
+    margin-left: 0;
+}
+
+.md .navbar .title.text-center,
+.ios .navbar .title.text-center {
+    text-align: center;
+    font-size: 18px;
+}
+
+.legal-notice {
+    /* position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0; */
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.legal-notice a {
+    text-decoration: underline;
+}
+
+.icon-cross {
+    width: 45px;
+}
+
+.home-icon {
+    max-height: 80%;
+}
+
+img.quiz-banner,
+.img-responsive {
+    max-width: 100%;
+    display: inherit;
+}
+
+img.menu-icon.img-responsive {
+    max-height: 90%;
+}
+
+.md .navbar,
+.ios .navbar {
+    /* height: 70px!important; */
+    border-bottom: 2px solid #fff;
+}
+
+.md .navbar~.page-content {
+    padding-top: 56px!important;
+}
+
+a.go-quizz {
+    display: block;
+}
+
+
+/* Margins and paddings */
+
+.mt-0,
+.md .block.mt-0,
+.ios .block.mt-0 {
+    margin-top: 0;
+}
+
+.mt-10,
+.md .block.mt-10,
+.ios .block.mt-10 {
+    margin-top: 10px;
+}
+
+.mt-20,
+.md .block.mt-20,
+.ios .block.mt-20 {
+    margin-top: 20px;
+}
+
+.md-0,
+.md .block.mb-0,
+.ios .block.mb-0 {
+    margin-bottom: 0;
+}
+
+.mb-10,
+.md .block.mb-10,
+.ios .block.mb-10 {
+    margin-bottom: 10px;
+}
+
+.mb-15,
+.md .block.mb-15,
+.ios .block.mb-15 {
+    margin-bottom: 15px;
+}
+
+.pb-15,
+.pb .block.pb-15,
+.ios .block.pb-15 {
+    padding-bottom: 15px;
+}
+
+.mt-25 {
+    margin-top: 25px;
+}
+
+
+/* End Margins and paddings */
+
+.page-intro.block {
+    color: #343434;
+}
+
+ul.our-strengh {
+    display: flex;
+}
+
+.our-strengh li {
+    flex: 1;
+    list-style-type: none;
+}
+
+.our-strengh li:first-child {
+    flex: 1 25%;
+}
+
+.our-strengh li:last-child {
+    flex: 1 30%;
+}
+
+.our-strengh li:nth-child(2) {
+    flex: 1 40%;
+}
+
+.our-strengh li .icon {
+    width: 25px;
+    float: left;
+}
+
+.our-strengh li span {
+    font-size: 2.65vw;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5px;
+    line-height: 30px;
+}
+
+p.subtitle {
+    font-size: 11px;
+    position: relative;
+    padding-bottom: 10px !important;
+}
+
+.md p.subtitle,
+.ios p.subtitle {
+    padding-top: 5px;
+}
+
+p.subtitle:after,
+.quiz-results:after,
+.cta-go:after {
+    position: absolute;
+    bottom: 0;
+    left: 25%;
+    width: 50%;
+    height: 1px;
+    background-color: #2196f3;
+    content: ' ';
+}
+
+a#notif-settings-btn {
+    display: inline-block;
+}
+
+.cta a,
+a.btn-shadow,
+.btn-shadow {
+    color: #fff;
+    background-color: #0b2639;
+    border: none;
+    background-image: -webkit-linear-gradient(top, #1c374a, #0b2639);
+    width: 120px;
+    padding: 10px;
+    text-align: center;
+    line-height: 18px;
+    border-radius: 10px;
+    box-shadow: inset 0 0px 4px 6px #405c71;
+}
+
+.quiz-results {
+    position: relative;
+}
+
+.quiz-results img {
+    margin: auto;
+}
+
+.quiz-results .cta a,
+.gotopromo {
+    width: auto;
+    background-color: #e1a439;
+    background-image: -webkit-linear-gradient(top, #ffdd6f, #e1a439);
+    box-shadow: inset 0 0px 4px 6px #e1a439;
+    padding: 17px;
+    -webkit-transform: initial;
+    transform: initial;
+    font-size: 20px;
+}
+
+.notice a.link.external {
+    width: auto;
+    padding: 15px;
+}
+
+.bookmaker_site img {
+    width: 150px;
+}
+
+a#rate-app-btn {
+    width: 150px;
+    display: inline-block;
+    padding: 10px 16px;
+    font-size: 13px;
+}
+
+.promo-message {
+    font-size: 12px;
+}
+
+.gotopromo,
+.md a.gotopromo,
+.ios a.gotopromo {
+    border-radius: 6px;
+    padding: 10px 15px;
+    color: #fff;
+    font-size: 15px;
+}
+
+.cta-go {
+    font-size: 11px;
+    position: relative;
+    padding-bottom: 25px !important;
+}
+
+.notice p {
+    text-align: left;
+}
+
+.br-theme-bars-movie .br-widget {
+    height: 10px;
+    white-space: nowrap;
+}
+
+.br-theme-bars-movie .br-widget a {
+    display: block;
+    width: 60px;
+    height: 8px;
+    float: left;
+    background-color: #bbcefb;
+    margin: 1px;
+}
+
+.br-theme-bars-movie .br-widget a.br-selected {
+    background-color: #FFE436;
+    border-bottom-color: #FFFF6B;
+}
+
+.br-theme-bars-movie .br-widget .br-current-rating {
+    clear: both;
+    width: 240px;
+    text-align: center;
+    font-weight: 600;
+    display: block;
+    padding: .5em 0;
+    color: #4278F5;
+    font-weight: 400;
+}
+
+.br-current-rating {
+    display: none!important;
+}
+
+.br-wrapper.br-theme-bars-movie {
+    max-width: 100%;
+    width: 85px;
+}
+
+.br-theme-bars-movie .br-widget a {
+    width: 5px!important;
+}
+
+.br-theme-bars-movie .br-widget a {
+    border: 1px solid #b3b3b3;
+    background: white;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.br-theme-bars-movie .br-widget a.br-selected {
+    border: 1px solid black;
+    background: white;
+}
+
+.br-theme-bars-movie .br-widget .br-current-rating {
+    color: black;
+}
+
+select {
+    padding: 2px;
+    border: 1px solid #bbb;
+    color: #4e4e4e;
+    background-color: #fff;
+}
+
+select:focus {
+    border-color: #2d3940;
+    color: #3e3e3e;
+}
+
+select {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.et_header_style_fullscreen input::-moz-placeholder {
+    color: #fff;
+}
+
+.et_header_style_fullscreen input::-webkit-input-placeholder {
+    color: #fff;
+}
+
+.et_header_style_fullscreen input:-ms-input-placeholder {
+    color: #fff;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.note {
+    margin: auto;
+    width: 49%;
+    background-color: #f2f2f2;
+    padding: 5px;
+}
+
+.note_txt {
+    font-size: 80%;
+}
+
+.logoJeux {
+    height: 85px;
+    float: left;
+}
+
+.bleu {
+    color: #0070bb;
+}
+
+.gris {
+    color: grey;
+}
+
+.surDix {
+    display: inline-block;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 130%;
+    float: left;
+}
+
+.gris {
+    font-size: 100%!important;
+    font-weight: normal;
+    margin-top: 6px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.articlePari {
+    font-weight: bold;
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    font-size: 100%;
+    background-color: white;
+    border-top: 2px solid #2196f3;
+    /* padding: 3px 0; */
+}
+
+.articlePari:last-child {
+    border-bottom: 2px solid #2196f3;
+}
+
+.note {
+    margin: auto;
+    width: 49%;
+    background-color: #f2f2f2;
+    padding: 5px;
+}
+
+.note_txt {
+    font-size: 80%;
+}
+
+.num {
+    background: url(../images/triangleBleu.png) no-repeat;
+    background-position: left top;
+    float: left;
+    font-weight: normal;
+    height: 44px;
+    font-family: 'easports';
+    color: white;
+}
+
+.logoJeux {
+    float: left;
+}
+
+.bleu {
+    color: #0070bb;
+}
+
+.gris {
+    color: grey;
+}
+
+.surDix {
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 130%;
+    float: left;
+}
+
+.petit {
+    font-size: 50%;
+}
+
+.numNotes {
+    margin-top: 5%;
+    float: left;
+}
+
+.pariez {
+    margin: auto;
+    width: 49%;
+    padding: 5px;
+    font-size: 80%;
+    text-align: center;
+}
+
+.pariez p {
+    font-size: 115%;
+}
+
+.pariez p span {
+    display: block;
+}
+
+.bouton,
+a.bouton {
+    margin: auto;
+    width: 30%;
+    padding: 5px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: solid 2px white;
+    background-color: #ffff00;
+    box-shadow: 0px 2px 10px rgba(25, 25, 25, 0.5), 0px -15px 10px rgba(251, 176, 59, 1) inset;
+    font-size: 18px!important;
+}
+
+a.bouton {
+    display: inline-block;
+    color: #333;
+}
+
+.bouton:hover,
+a.bouton {
+    box-shadow: 0px 2px 10px rgba(25, 25, 25, 0.5), 0px -10px 10px rgba(251, 176, 59, 1) inset;
+}
+
+.bouton:active,
+a.bouton {
+    box-shadow: 0px 1px 10px rgba(25, 25, 25, 0.5), 0px -5px 10px rgba(251, 176, 59, 1) inset;
+    transform: translateY(2px);
+}
+
+a {
+    color: #666;
+}
+
+p {
+    padding-bottom: 0;
+}
+
+.bleu {
+    padding-top: 10px;
+}
+
+.gris {
+    font-size: 100%!important;
+    font-weight: normal;
+    margin-top: 6px;
+}
+
+.surDix {
+    margin-right: 8%;
+}
+
+.note {
+    text-align: center!important;
+}
+
+.num {
+    background-size: contain;
+    width: 40px!important;
+    font-size: 18px!important;
+    padding-left: 5px;
+    text-align: left;
+}
+
+.logoJeux,
+.logoJeux>a {
+    width: 75%!important;
+    height: 45px;
+    float: left;
+}
+
+.logoJeux img {
+    max-height: 100%;
+}
+
+
+/* .logoJeux img{width:100%!important;} */
+
+.surDix {
+    width: 100%!important;
+    margin: 0!important;
+}
+
+.numNotes {
+    width: 100%!important;
+    margin: 0!important;
+}
+
+.grand {
+    font-size: 100%!important;
+}
+
+.bleu {
+    padding: 0!important;
+    margin: 0px;
+}
+
+.bouton {
+    width: 60%!important;
+}
+
+#first-row .note_txt {
+    color: #666;
+}
+
+.home .pariez .petit.gris {
+    margin-top: 15px;
+}
+
+.home .numNotes .petit.gris {
+    margin-bottom: 15px;
+}
+
+.br-theme-bars-movie .br-widget {
+    margin: auto;
+    display: inline-block;
+}
+
+.br-wrapper.br-theme-bars-movie {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.surDix p:first-child,
+.numNotes p.petit.gris {
+    display: none;
+}
+
+#bookmaker_name {
+    font-weight: bold;
+}
+
+.btn-shadow.discover {
+    width: initial;
+    padding: 18px;
+    padding: 15px;
+    font-size: 13px;
+}
+
+.quiz-results:after {
+    position: absolute;
+    bottom: 0;
+    left: 30%;
+    width: 40%;
+}
+
+
+/* QUizz */
+
+#mps-quizz {
+    color: #1878c0;
+}
+
+#mps-quizz label,
+#mps-quizz label span {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+}
+
+span.form-icon {
+    width: 22px;
+    height: 22px;
+    margin-right: 10px;
+}
+
+#mps-quizz label span {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+span.form-icon.icon-user {
+    background: url(../images/question-1.png) no-repeat center;
+    background-size: cover;
+}
+
+span.form-icon.icon-cup {
+    background: url(../images/Question-2.png) no-repeat center;
+    background-size: cover;
+}
+
+span.form-icon.icon-bet {
+    background: url(../images/Question-3.png) no-repeat center;
+    background-size: cover;
+}
+
+span.form-icon.icon-money {
+    background: url(../images/Question-4.png) no-repeat center;
+    background-size: cover;
+}
+
+span.form-icon.icon-list {
+    background: url(../images/Question-5.png) no-repeat center;
+    background-size: cover;
+}
+
+.inline-radio {
+    display: inline-block;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.inline-radio>div {
+    display: inline-block;
+}
+
+.inline-radio div:first-child {
+    width: 29%;
+}
+
+.inline-radio div:nth-child(2) {
+    width: 40%;
+}
+
+.pariez .petit.gris a {
+    /* border: 1px solid gray; */
+    padding: 4px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    text-decoration: underline;
+}
+
+.form-row.form-submit {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.cntr {
+    margin: auto;
+}
+
+.btn-radio {
+    cursor: pointer;
+    display: inline-block;
+    float: left;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.btn-radio:not(:first-child) {
+    margin-left: 20px;
+}
+
+button.btn-shadow.button.open-preloader,
+.form-submit button {
+    margin: auto;
+    color: #fff;
+}
+
+@media screen and (max-width: 480px) {
+    .btn-radio {
+        display: block;
+        float: none;
+    }
+    .btn-radio:not(:first-child) {
+        margin-left: 0;
+    }
+}
+
+.btn-radio svg {
+    fill: none;
+    vertical-align: middle;
+}
+
+.btn-radio svg circle {
+    stroke-width: 2;
+    stroke: #DEA54B;
+}
+
+.btn-radio svg path {
+    stroke: #DEA54B;
+}
+
+.addNote {
+    color: #008FFF;
+    border: 1px solid #008FFF;
+    padding: 3px 5px;
+    border-radius: 5px;
+}
+
+p.rate-bookmaker {
+    margin: 0;
+    font-size: 11px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+div[id^='rateYo'] {
+    text-align: center;
+    margin: auto;
+}
+
+
+/* Basic styles */
+
+input[type="checkbox"],
+input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+    width: 1.2em;
+    height: 1.2em;
+}
+
+.inline-checkbox label,
+.inline-radio label {
+    position: relative;
+    display: inline-block;
+    padding: 0 0 0 2.5em;
+    height: 2em;
+    line-height: 2;
+    cursor: pointer;
+}
+
+.inline-checkbox label::before,
+.inline-radio label::before,
+.inline-checkbox label::after,
+.inline-radio label::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 1.2em;
+    height: 1.2em;
+}
+
+.inline-checkbox label::before,
+.inline-radio label::before {
+    content: " ";
+    border: 2px solid #bdc3c7;
+    border-radius: 20%;
+}
+
+
+/* Checkbox */
+
+input[type="checkbox"]+label::after {
+    content: "\2714";
+    color: #2c3e50;
+    line-height: 2;
+    text-align: center;
+}
+
+
+/* Radio */
+
+input[type="radio"]+label::before {
+    border-radius: 50%;
+}
+
+input[type=radio]+label::after {
+    content: " ";
+    top: 0;
+    left: 0;
+    width: 1.2em;
+    height: 1.2em;
+    background: #fff;
+    border: .2em solid #2c3e50;
+    border-radius: 50%;
+}
+
+
+/* :checked */
+
+input[type="checkbox"]:checked+label::before,
+input[type="radio"]:checked+label::before {
+    background: #fff;
+    border-color: #fff;
+}
+
+input[type="checkbox"]+label::after,
+input[type=radio]+label::after {
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
+}
+
+input[type="checkbox"]:checked+label::after,
+input[type=radio]:checked+label::after {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+}
+
+
+/* Transition */
+
+label::before,
+label::after {
+    -webkit-transition: .25s all ease;
+    -o-transition: .25s all ease;
+    transition: .25s all ease;
+}
+
+.page.no-navbar.landing a.landing-zone {
+    background: #6D6027;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #D3CBB8, #6D6027);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #D3CBB8, #6D6027);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: url('../images/zebet-partenaire.jpg') no-repeat center;
+    background-size: cover;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.ios .landing .block-strong:before,
+.md .landing .block-strong:before,
+.ios .landing .block-strong:after,
+.md .landing .block-strong:after {
+    content: unset;
+}
+
+.ios .landing .block-strong,
+.md .landing .block-strong {
+    background: transparent;
+}
+
+.ios .block-header,
+.md .block-header {
+    padding-top: 35px;
+    margin-top: 0;
+}
+
+.logo-header {
+    position: relative;
+}
+
+.closegohome {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 25px;
+    height: 25px;
+    background: url(../images/cross.png) #008FFF no-repeat center;
+    background-size: 90%;
+    border-radius: 15px;
+}
+
+.notif-logo {
+    text-align: center;
+}
+
+.notif-logo img {
+    max-width: 150px;
+    margin: auto;
+}
+
+p.promo-amount {
+    font-size: 7rem;
+    color: #CC9949;
+    margin-bottom: 0;
+}
+
+p.promo-desc {
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    font-weight: bold;
+    padding: 0 20px;
+}
+
+.promo-code {
+    margin-bottom: 40px;
+}
+
+.promo-code span {
+    font-size: 29px;
+    background-color: #CC9949;
+    padding: 10px 20px;
+    display: inline-block;
+    font-weight: bold;
+    color: #fff;
+    width: 190px;
+}
+
+a.i-subscribe {
+    width: 190px;
+    padding: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.block.footer.landing-footer {
+    position: absolute;
+    bottom: 0;
+}
+
+.block.footer.landing-footer p {
+    color: #000;
+    font-weight: bold;
+}
+
+.wpb_button,
+.wpb_content_element,
+ul.wpb_thumbnails-fluid>li {
+    margin-bottom: 15px;
+}
+
+.bookmaker .block.strong {
+    margin: 15px;
+}
+
+fieldset {
+    border: 2px solid #DEA54B;
+    padding: 15px 10px;
+    margin-bottom: 15px;
+    background-color: #1C2023;
+    color: #fff;
+}
+
+legend {
+    padding: 0.2em 0.5em;
+    border: 1px solid #000;
+    background-color: #DEA54B;
+}
+
+a.add-my-vote.sheet-close span {
+    border: 1px solid #fff;
+    padding: 0 10px;
+    display: inline-block;
+    height: 30px;
+    line-height: 2;
+    border-radius: 10px;
+}
+
+.notice-content ul {
+    padding-left: 20px;
+}
+
+
+/***
+  Rate Yo
+  **/
+
+.jq-ry-container {
+    position: relative;
+    padding: 0 5px;
+    line-height: 0;
+    display: block;
+    cursor: pointer;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    direction: ltr
+}
+
+.jq-ry-container[readonly=readonly] {
+    cursor: default
+}
+
+.jq-ry-container>.jq-ry-group-wrapper {
+    position: relative;
+    width: 100%
+}
+
+.jq-ry-container>.jq-ry-group-wrapper>.jq-ry-group {
+    position: relative;
+    line-height: 0;
+    z-index: 10;
+    white-space: nowrap
+}
+
+.jq-ry-container>.jq-ry-group-wrapper>.jq-ry-group>svg {
+    display: inline-block
+}
+
+.jq-ry-container>.jq-ry-group-wrapper>.jq-ry-group.jq-ry-normal-group {
+    width: 100%
+}
+
+.jq-ry-container>.jq-ry-group-wrapper>.jq-ry-group.jq-ry-rated-group {
+    width: 0;
+    z-index: 11;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
