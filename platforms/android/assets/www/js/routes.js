@@ -88,7 +88,7 @@ routes = [{
     },
     {
         path: '/quizz/',
-        url: './pages/quizz.html',
+        url: './pages/quizz.html'
     },
     {
         path: '/quizz/result/:id',

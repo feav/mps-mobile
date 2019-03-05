@@ -24,6 +24,9 @@
     },
     "cordova-plugin-splashscreen": {
       "PACKAGE_NAME": "com.mps.mobileapp"
+    },
+    "onesignal-cordova-plugin": {
+      "PACKAGE_NAME": "io.cordova.hellocordova"
     }
   },
   "dependent_plugins": {

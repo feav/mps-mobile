@@ -88,7 +88,7 @@ routes = [{
     },
     {
         path: '/quizz/',
-        url: './pages/quizz.html',
+        url: './pages/quizz.html'
     },
     {
         path: '/quizz/result/:id',
@@ -151,8 +151,7 @@ routes = [{
                 app.data.mpsJsonBase + 'pages/?slug=mentions-legales', {},
                 function(data) {
                     app.preloader.hide();
-                    console.log(data);
-                    // data = {};
+                    // console.log(data);
 
                     resolve({ componentUrl: './pages/legal-notice.html' }, {
                         context: {

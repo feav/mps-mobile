@@ -14,7 +14,8 @@ var app = new Framework7({
                 firstName: 'John',
                 lastName: 'Doe',
             },
-            mpsJsonBase: 'http://mps.developement.ovh/wp-json/wp/v2/',
+            //mpsJsonBase: 'http://mps.developement.ovh/wp-json/wp/v2/',
+            mpsJsonBase: 'https://paris-sportifs-top10.fr/wp-json/wp/v2/',
         };
     },
     on: {
@@ -493,6 +494,15 @@ function onDeviceReady() {
     window.FirebasePlugin.onNotificationOpen(function(notification) {
         console.log(notification);
         mainView.router.navigate('/landing-popup/');
+        //alert(JSON.stringify(notification.url, null, 4));
+        setTimeout(
+            function(){
+                document.getElementById("id1").style.background = 'url('+notification.brand+') no-repeat center'; 
+                document.getElementById("id2").setAttribute("href",notification.url);     
+            }, 500
+        )
+        
+        //alert(JSON.stringify(notification, null, 4));
     }, function(error) {
         console.error(error);
     });

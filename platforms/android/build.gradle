@@ -97,6 +97,7 @@ ext {
 
 // PLUGIN GRADLE EXTENSIONS START
 apply from: "cordova-plugin-firebase/mobileapp-build.gradle"
+apply from: "onesignal-cordova-plugin/mobileapp-build-extras-onesignal.gradle"
 // PLUGIN GRADLE EXTENSIONS END
 
 def hasBuildExtras = file('build-extras.gradle').exists()
@@ -263,6 +264,7 @@ dependencies {
     compile "com.google.firebase:firebase-messaging:+"
     compile "com.google.firebase:firebase-config:+"
     compile "com.google.firebase:firebase-perf:+"
+    compile "com.onesignal:OneSignal:3.10.5"
     // SUB-PROJECT DEPENDENCIES END
 }
 
