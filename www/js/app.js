@@ -16,6 +16,9 @@ var app = new Framework7({
             },
             //mpsJsonBase: 'http://mps.developement.ovh/wp-json/wp/v2/',
             mpsJsonBase: 'https://paris-sportifs-top10.fr/wp-json/wp/v2/',
+            pubIsActive_API_URL : "https://paris-sportifs-top10.fr/wp-admin/admin-ajax.php?action=param_api_url_action&param=1",
+            pubBrand_API_URL : "https://paris-sportifs-top10.fr/wp-admin/admin-ajax.php?action=param_api_url_action&param=2",
+            pubLink_API_URL : "https://paris-sportifs-top10.fr/wp-admin/admin-ajax.php?action=param_api_url_action&param=3"
         };
     },
     on: {
@@ -497,14 +500,77 @@ function onDeviceReady() {
         //alert(JSON.stringify(notification.url, null, 4));
         setTimeout(
             function(){
-                document.getElementById("brand").style.background = 'url('+notification.brand+') no-repeat center'; 
-                document.getElementById("url").setAttribute("href",notification.url);     
+                $$("#brand").css("background-image",'url('+notification.brand+')');
+                $$("#brand").css("background-repeat", "no-repeat");
+                $$("#brand").css("background-attachment", "fixed");
+                $$("#brand").css("background-position", "center");
+                $$("#url").attr("href", notification.url);
             }, 500
-        )
+        );
         
         //alert(JSON.stringify(notification, null, 4));
     }, function(error) {
         console.error(error);
     });
 
+    startPub(app.data.pubIsActive_API_URL, app.data.pubBrand_API_URL, app.data.pubLink_API_URL);
+    //
+    function startPub(pubIsActive_API_URL, pubBrand_API_URL, pubLink_API_URL){
+
+        var pubIsActive = false, pubBrand, pubLink;
+
+        // Request to check if starting pub is actived
+        app.request.json(
+            pubIsActive_API_URL, 
+            function(data) {
+                
+                if(data){
+                    pubIsActive = data.value;
+                    // console.log(pubIsActive);
+                    if(pubIsActive){
+                        app.request.json(pubBrand_API_URL, 
+                            function(data) {
+                                
+                                if(data){
+                                    pubBrand = data.value;
+                                    // console.log(pubBrand);
+                                    app.request.json(pubLink_API_URL, 
+                                        function(data) {
+                                            
+                                            if(data){
+                                                pubLink = data.value;
+                                                // console.log(pubLink);
+                                                mainView.router.navigate('/landing-popup/');
+                                                setTimeout(function(){
+                                                    $$("#brand").css('background-image','url('+pubBrand+')');
+                                                    $$("#brand").css('background-repeat','no-repeat');
+                                                    $$("#brand").css('background-attachment','fixed');
+                                                    $$("#brand").css('background-position','center');
+                                                    $$("#url").attr('href', pubLink);    
+                                                },500);
+                                                
+                                            }
+                                                
+                                        },
+                                        function(xhr, status) {
+                                            
+                                        }
+                                    )
+                                }
+                                    
+                            },
+                            function(xhr, status) {
+                                
+                            }
+                        );
+                    }
+   
+                }
+                    
+            },
+            function(xhr, status) {
+                
+            }
+        );
+    }
 }

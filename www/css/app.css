@@ -1154,3 +1154,11 @@ a.add-my-vote.sheet-close span {
     left: 0;
     overflow: hidden;
 }
+
+#brand{
+    width:100%;
+    height: 100%;
+    position: absolute;
+    background-size: cover;
+    display: block;
+}

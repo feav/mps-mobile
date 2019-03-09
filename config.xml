@@ -77,6 +77,5 @@
     <plugin name="cordova-plugin-device" spec="^2.0.2" />
     <plugin name="cordova-plugin-firebase" spec="^2.0.5" />
     <plugin name="cordova-plugin-splashscreen" spec="^5.0.2" />
-    <plugin name="onesignal-cordova-plugin" spec="2.4.6" />
     <engine name="android" spec="^6.3.0" />
 </widget>
