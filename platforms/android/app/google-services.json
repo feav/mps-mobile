@@ -1,27 +1,27 @@
 {
   "project_info": {
-    "project_number": "555684743181",
-    "firebase_url": "https://top-10-messages.firebaseio.com",
-    "project_id": "top-10-messages",
-    "storage_bucket": "top-10-messages.appspot.com"
+    "project_number": "1020292608868",
+    "firebase_url": "https://top-10-paris-sportifs.firebaseio.com",
+    "project_id": "top-10-paris-sportifs",
+    "storage_bucket": "top-10-paris-sportifs.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:555684743181:android:c135aff8f2dd77f6",
+        "mobilesdk_app_id": "1:1020292608868:android:32d57d39425a0fe3",
         "android_client_info": {
-          "package_name": "com.mps.mobileapp"
+          "package_name": "com.top10parissportifs.mobileapp"
         }
       },
       "oauth_client": [
         {
-          "client_id": "555684743181-ige3ehgr96bopubugpjt24pmcf8d9te2.apps.googleusercontent.com",
+          "client_id": "1020292608868-2hag9mtlmj1f2s5ipgea8g4aic5meut4.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDitodmICqCB2pPYhIInA2xLeEMu8FsHYY"
+          "current_key": "AIzaSyCBtJzz0eIr3mQa53EqQrEobPlZpmpUWx0"
         }
       ],
       "services": {
