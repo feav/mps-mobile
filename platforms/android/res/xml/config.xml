@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget android-versionCode="1" id="com.top10parissportifs.mobileapp" version="1.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget android-versionCode="1" defaultlocale="fr-FR" id="com.top10parissportifs.mobileapp" version="1.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <feature name="NativeSettings">
         <param name="android-package" value="com.phonegap.plugins.nativesettings.NativeSettings" />
     </feature>
@@ -33,9 +33,9 @@
         <param name="android-package" value="org.apache.cordova.splashscreen.SplashScreen" />
         <param name="onload" value="true" />
     </feature>
-    <name>Paris Sportifs Top 10</name>
+    <name>Classement Paris Sportifs</name>
     <description>
-        Gratuit: Comparez tous les sites de paris sportifs grâce à Top 10 Paris Sportifs
+        Gratuit: Comparez les sites de paris sportifs grâce à Classement Paris Sportifs
     </description>
     <author email="top10parissportifs@gmail.com" href="https://www.meilleursparissportifs.com/">
         Comparateur Paris Sportifs
@@ -49,25 +49,25 @@
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
     <allow-intent href="market:*" />
-    <icon density="ldpi" src="res/icon/android/ldpi.png" />
-    <icon density="mdpi" src="res/icon/android/mdpi.png" />
-    <icon density="hdpi" src="res/icon/android/hdpi.png" />
-    <icon density="xhdpi" src="res/icon/android/xhdpi.png" />
-    <icon density="xxhdpi" src="res/icon/android/xxhdpi.png" />
-    <icon density="xxxhdpi" src="res/icon/android/xxxhdpi.png" />
+    <icon density="ldpi" src="res/icon/android/mipmap-ldpi/ic_launcher.png" />
+    <icon density="mdpi" src="res/icon/android/mipmap-mdpi/ic_launcher.png" />
+    <icon density="hdpi" src="res/icon/android/mipmap-hdpi/ic_launcher.png" />
+    <icon density="xhdpi" src="res/icon/android/mipmap-xhdpi/ic_launcher.png" />
+    <icon density="xxhdpi" src="res/icon/android/mipmap-xxhdpi/ic_launcher.png" />
+    <icon density="xxxhdpi" src="res/icon/android/mipmap-xxxhdpi/ic_launcher.png" />
     <resource-file src="google-services.json" target="google-services.json" />
     <resource-file src="res/icon/android/mipmap-xxxhdpi/ic_launcher.png" target="res/icon/android/mipmap-xxxhdpi/ic_launcher.png" />
-    <splash qualifier="land-ldpi" src="res/screens/android/drawable-land-ldpi-screen.png" />
-    <splash qualifier="land-mdpi" src="res/screens/android/drawable-land-mdpi-screen.png" />
-    <splash qualifier="land-hdpi" src="res/screens/android/drawable-land-hdpi-screen.png" />
-    <splash qualifier="land-xhdpi" src="res/screens/android/drawable-land-xhdpi-screen.png" />
-    <splash qualifier="land-xxhdpi" src="res/screens/android/drawable-land-xxhdpi-screen.png" />
-    <splash qualifier="land-xxxhdpi" src="res/screens/android/drawable-land-xxxhdpi-screen.png" />
-    <splash qualifier="port-ldpi" src="res/screens/android/drawable-port-ldpi-screen.png" />
-    <splash qualifier="port-mdpi" src="res/screens/android/drawable-port-mdpi-screen.png" />
-    <splash qualifier="port-hdpi" src="res/screens/android/drawable-port-hdpi-screen.png" />
-    <splash qualifier="port-xhdpi" src="res/screens/android/drawable-port-xhdpi-screen.png" />
-    <splash qualifier="port-xxhdpi" src="res/screens/android/drawable-port-xxhdpi-screen.png" />
-    <splash qualifier="port-xxxhdpi" src="res/screens/android/drawable-port-xxxhdpi-screen.png" />
+    <splash qualifier="land-ldpi" src="res/screens/android/splash-screen-land.png" />
+    <splash qualifier="land-mdpi" src="res/screens/android/splash-screen-land.png" />
+    <splash qualifier="land-hdpi" src="res/screens/android/splash-screen-land.png" />
+    <splash qualifier="land-xhdpi" src="res/screens/android/splash-screen-land.png" />
+    <splash qualifier="land-xxhdpi" src="res/screens/android/splash-screen-land.png" />
+    <splash qualifier="land-xxxhdpi" src="res/screens/android/splash-screen-land.png" />
+    <splash qualifier="port-ldpi" src="res/screens/android/splash-screen.png" />
+    <splash qualifier="port-mdpi" src="res/screens/android/splash-screen.png" />
+    <splash qualifier="port-hdpi" src="res/screens/android/splash-screen.png" />
+    <splash qualifier="port-xhdpi" src="res/screens/android/splash-screen.png" />
+    <splash qualifier="port-xxhdpi" src="res/screens/android/splash-screen.png" />
+    <splash qualifier="port-xxxhdpi" src="res/screens/android/splash-screen.png" />
     <preference name="loglevel" value="DEBUG" />
 </widget>

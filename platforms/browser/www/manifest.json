@@ -1,10 +1,10 @@
 {
   "background_color": "#FFF",
   "display": "standalone",
-  "name": "Paris Sportifs Top 10",
-  "short_name": "Paris Sportifs Top 10",
+  "name": "Classement Paris Sportifs",
+  "short_name": "Classement Paris Sportifs",
   "version": "com.top10parissportifs.mobileapp",
-  "description": "Gratuit: Comparez tous les sites de paris sportifs grâce à Top 10 Paris Sportifs",
+  "description": "Gratuit: Comparez les sites de paris sportifs grâce à Classement Paris Sportifs",
   "author": "Comparateur Paris Sportifs",
   "icons": [],
   "start_url": "index.html",

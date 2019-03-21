@@ -1,6 +1,6 @@
 {
-  "name": "Top 10 Paris Sportifs",
-  "short_name": "Top 10 Paris Sportifs",
+  "name": "Classement Paris Sportifs",
+  "short_name": "Classement Paris Sportifs",
   "description": "Description of your app from template",
   "start_url": "index.html",
   "scope": "index.html",

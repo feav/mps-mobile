@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget android-versionCode="1" id="com.top10parissportifs.mobileapp" version="1.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>Paris Sportifs Top 10</name>
+<widget android-versionCode="1" defaultlocale="fr-FR" id="com.top10parissportifs.mobileapp" version="1.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Classement Paris Sportifs</name>
     <description>
-        Gratuit: Comparez tous les sites de paris sportifs grâce à Top 10 Paris Sportifs
+        Gratuit: Comparez les sites de paris sportifs grâce à Classement Paris Sportifs
     </description>
     <author email="top10parissportifs@gmail.com" href="https://www.meilleursparissportifs.com/">
         Comparateur Paris Sportifs

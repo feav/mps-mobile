@@ -4,8 +4,8 @@ var $$ = Dom7;
 // Framework7 App main instance
 var app = new Framework7({
     root: '#app', // App root element
-    id: 'com.mps.mobileapp', // App bundle ID
-    name: 'Paris Sportifs Top 10', // App name
+    id: 'com.top10parissportifs.mobileapp', // App bundle ID
+    name: 'Classement Paris Sportifs', // App name
     theme: 'auto', // Automatic theme detection
     // App root data
     data: function() {
@@ -459,13 +459,13 @@ document.addEventListener("deviceready", onDeviceReady, false);
 function onDeviceReady() {
     // Now safe to use device APIs
     AppRate.preferences = {
-        displayAppName: 'Top 10 Paris Sportifs',
+        displayAppName: 'Classement Paris Sportifs',
         usesUntilPrompt: 5,
         promptAgainForEachNewVersion: false,
         inAppReview: true,
         storeAppURL: {
-            ios: 'com.mps.mobileapp',
-            android: 'market://details?id=com.mps.mobileapp',
+            ios: 'com.top10parissportifs.mobileapp',
+            android: 'market://details?id=com.top10parissportifs.mobileapp',
             windows: 'ms-windows-store://pdp/?ProductId=<the apps Store ID>',
             blackberry: 'appworld://content/[App Id]/',
             windows8: 'ms-windows-store:Review?name=<the Package Family Name of the application>'
