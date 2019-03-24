@@ -1,0 +1,4 @@
+#Fri Mar 22 15:00:46 WAT 2019
+base.0=F\:\\Binghana LTD\\Projets\\mps-mobile\\platforms\\android\\app\\build\\intermediates\\transforms\\dex\\release\\0
+path.0=classes.dex
+renamed.0=classes.dex

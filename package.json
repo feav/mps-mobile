@@ -10,12 +10,12 @@
   "author": "Apache Cordova Team",
   "license": "Apache-2.0",
   "dependencies": {
-    "cordova-android": "^6.3.0",
+    "cordova-android": "^7.1.4",
     "cordova-open-native-settings": "^1.5.2",
     "cordova-plugin-apprate": "^1.4.0",
     "cordova-plugin-device": "^2.0.2",
     "cordova-plugin-dialogs": "^2.0.1",
-    "cordova-plugin-firebase": "^2.0.5",
+    "cordova-plugin-firebase": "2.0.5",
     "cordova-plugin-globalization": "^1.11.0",
     "cordova-plugin-inappbrowser": "^3.0.0",
     "cordova-plugin-nativestorage": "^2.3.2",
@@ -24,12 +24,12 @@
   },
   "cordova": {
     "plugins": {
-      "cordova-plugin-whitelist": {},
       "cordova-open-native-settings": {},
       "cordova-plugin-apprate": {},
+      "cordova-plugin-whitelist": {},
+      "cordova-plugin-splashscreen": {},
       "cordova-plugin-device": {},
-      "cordova-plugin-firebase": {},
-      "cordova-plugin-splashscreen": {}
+      "cordova-plugin-firebase": {}
     },
     "platforms": [
       "android"

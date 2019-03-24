@@ -1,0 +1,47 @@
+<template>
+    <div class="page bookmaker" data-name="bookmaker">
+        <!-- Top Navbar -->
+        <div class="navbar">
+            <div class="navbar-inner">
+                <div class="left">
+                    <a href="#" class="link icon-only panel-open" data-panel="left">
+                        <img class="menu-icon img-responsive" src="images/menu-icon.png">
+                    </a>
+                </div>
+                <div class="title sliding text-center">CLASSEMENT <br />PARIS SPORTIFS</div>
+                <div class="right">
+                    <a href="/" class="link icon-only">
+                        <!-- data-panel="right" -->
+                        <img class="icon home-icon img-responsive" src="images/top-10-pari-sportifs.png">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Toolbar-->
+        <div class="toolbar" style="display:none;">
+            <div class="toolbar-inner">
+                <a href="#" class="link">Left Link</a>
+            </div>
+        </div>
+
+        <!-- Scrollable page content-->
+        <div class="page-content">
+            
+            <div class="home-banner">
+                <a href="/quizz/" class="link go-quizz">
+                    <img class="quiz-banner img-responsive" src="images/quiz-banner.png">
+                </a>
+            </div>
+<!--                 
+            <div class="page-intro block mt-0 mb-0">
+                <h1 class="subtitle pb-15 mb-15 text-bold">{{data.post_title}}</h1>
+            </div> -->
+            
+            <div class="block strong bookmaker-description">
+                {{data.content.rendered}}
+            </div>
+
+        </div>
+    </div>
+</template>

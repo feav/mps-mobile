@@ -106,6 +106,20 @@ module.exports = [
         "runs": true
     },
     {
+        "file": "plugins/cordova-plugin-splashscreen/www/splashscreen.js",
+        "id": "cordova-plugin-splashscreen.SplashScreen",
+        "pluginId": "cordova-plugin-splashscreen",
+        "clobbers": [
+            "navigator.splashscreen"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-splashscreen/src/browser/SplashScreenProxy.js",
+        "id": "cordova-plugin-splashscreen.SplashScreenProxy",
+        "pluginId": "cordova-plugin-splashscreen",
+        "runs": true
+    },
+    {
         "file": "plugins/cordova-plugin-device/www/device.js",
         "id": "cordova-plugin-device.device",
         "pluginId": "cordova-plugin-device",
@@ -126,20 +140,6 @@ module.exports = [
         "clobbers": [
             "FirebasePlugin"
         ]
-    },
-    {
-        "file": "plugins/cordova-plugin-splashscreen/www/splashscreen.js",
-        "id": "cordova-plugin-splashscreen.SplashScreen",
-        "pluginId": "cordova-plugin-splashscreen",
-        "clobbers": [
-            "navigator.splashscreen"
-        ]
-    },
-    {
-        "file": "plugins/cordova-plugin-splashscreen/src/browser/SplashScreenProxy.js",
-        "id": "cordova-plugin-splashscreen.SplashScreenProxy",
-        "pluginId": "cordova-plugin-splashscreen",
-        "runs": true
     }
 ];
 module.exports.metadata = 
@@ -152,9 +152,9 @@ module.exports.metadata =
     "cordova-plugin-nativestorage": "2.3.2",
     "cordova-plugin-apprate": "1.4.0",
     "cordova-plugin-whitelist": "1.3.3",
+    "cordova-plugin-splashscreen": "5.0.2",
     "cordova-plugin-device": "2.0.2",
-    "cordova-plugin-firebase": "2.0.5",
-    "cordova-plugin-splashscreen": "5.0.2"
+    "cordova-plugin-firebase": "2.0.5"
 }
 // BOTTOM OF METADATA
 });

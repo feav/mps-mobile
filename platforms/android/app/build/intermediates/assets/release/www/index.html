@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <!--
+    Customize this policy to fit your own app's needs. For more guidance, see:
+        https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+    Some notes:
+        * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+        * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+        * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+            * Enable inline JS: add 'unsafe-inline' to default-src
+    -->
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'self' 'unsafe-inline' 'unsafe-eval' data: gap: content:">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="theme-color" content="#2196f3">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <title>CLASSEMENT PARIS SPORTIFS</title>
+
+    <link rel="stylesheet" href="framework7/css/framework7.min.css">
+    <link rel="stylesheet" href="css/icons.css">
+    <link rel="stylesheet" href="css/app.css">
+
+</head>
+
+<body>
+    <div id="app">
+        <!-- Status bar overlay for fullscreen mode-->
+        <div class="statusbar"></div>
+        <!-- Left panel with cover effect-->
+        <div class="panel panel-left panel-cover">
+            <div class="view">
+                <div class="page">
+                    <div class="navbar">
+                        <div class="navbar-inner">
+                            <div class="title">
+                                <div class="row">
+                                    <!-- Each "cell" has col-[width in percents] class -->
+                                    <div class="col-33">
+                                        <a href="#" class="panel-close" data-panel="left"><img class="icon icon-cross img-responsive" src="images/cross.png"></a>
+                                    </div>
+                                    <div class="col-65 text-center"><span class="the-title">Classement<br> paris sportifs</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page-content">
+                        <a href="/quizz/" class="link panel-close go-quizz ">
+                            <img class="quiz-banner img-responsive" src="images/quiz-banner.png">
+                        </a>
+                        <div class=" menu-left">
+                            <ul id="left-panel-menu">
+                                <li><img class="icon img-responsive" src="images/Comparateur-paris-sportifs.png"> <a href="/" class="link panel-close">Classement
+                    paris sportifs</a></li>
+                                <li><img class="icon img-responsive" src="images/Timer.png"> <a href="/quizz/" class="link panel-close">Je fais le Quizz (15 sec.)</a></li>
+                                <li><img class="icon img-responsive" src="images/Promo-du-moment.png"> <a href="/actu-promo/" class="link panel-close">Promo
+                    du moment</a></li>
+                            </ul>
+
+                        </div>
+                        <div class="block">
+
+                        </div>
+                        <p class="legal-notice text-center"><a class="link panel-close text-white" href="/legal-notice/">Mentions légales</a></p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Right panel with reveal effect-->
+        <div class="panel panel-right panel-reveal theme-dark">
+            <div class="view">
+                <div class="page">
+                    <div class="navbar">
+                        <div class="navbar-inner">
+                            <div class="title">Right Panel</div>
+                        </div>
+                    </div>
+                    <div class="page-content">
+                        <div class="block">Right panel content goes here</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Your main view, should have "view-main" class -->
+        <div class="view view-main ios-edges">
+            <!-- Page, data-name contains page name which can be used in callbacks -->
+            <div class="page" data-name="home">
+                <!-- Top Navbar -->
+                <div class="navbar">
+                    <div class="navbar-inner">
+                        <div class="left">
+                            <a href="#" class="link icon-only panel-open" data-panel="left">
+                                <img class="menu-icon img-responsive" src="images/menu-icon.png">
+                            </a>
+                        </div>
+                        <div class="title sliding text-center">CLASSEMENT <br />PARIS SPORTIFS</div>
+                        <div class="right">
+                            <a href="/" class="link icon-only">
+                                <!-- data-panel="right" -->
+                                <img class="icon home-icon img-responsive" src="images/top-10-pari-sportifs.png">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Toolbar-->
+                <div class="toolbar" style="display:none;">
+                    <div class="toolbar-inner">
+                        <a href="#" class="link">Left Link</a>
+                    </div>
+                </div>
+                <!-- Scrollable page content-->
+                <div class="page-content">
+                    <div class="home-banner">
+                        <a href="/quizz/" class="link go-quizz">
+                            <img class="quiz-banner img-responsive" src="images/quiz-banner.png">
+                        </a>
+                    </div>
+                    <div class="page-intro block mt-0 mb-0">
+                        <p class="subtitle pb-15 mb-15">Découvrez notre classement des meilleurs sites de paris sportifs en ligne autorisés en France (certifiés ARJEL).</p>
+                        <ul class="our-strengh">
+                            <li><img class="icon img-responsive" src="images/Sites agrees.png"> <span>Sites agréés</span></li>
+                            <li><img class="icon img-responsive" src="images/Securite-des-donnees.png"> <span>Sécurité des données</span></li>
+                            <li><img class="icon img-responsive" src="images/100-pc-Responsive.png"> <span>100% responsive</span></li>
+                        </ul>
+                    </div>
+                    <div class="articles-list mt-10">
+
+                    </div>
+
+                    <input type="text" style="display:none;" class="picker-vote" value="5" />
+
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Login Screen -->
+    </div>
+    <!-- Cordova -->
+    <script src="cordova.js"></script>
+
+    <!-- Framework7 library -->
+    <script src="framework7/js/framework7.min.js"></script>
+
+    <!-- jquery library -->
+    <script src="js/jquery.min.js"></script>
+
+    <!-- App routes -->
+    <script src="js/routes.js"></script>
+
+    <!-- Your custom app scripts -->
+    <script src="js/app.js"></script>
+
+    <!-- Your custom app scripts -->
+    <script src="js/jquery.rateyo.min.js"></script>
+
+
+    <script id="template-banner" type="text/template">
+        <article class="articlePari">
+            <div class="home-banner">
+                <a href="/quizz/" class="link go-quizz">
+                    <img class="quiz-banner img-responsive" src="images/quiz-banner.png">
+                </a>
+            </div>
+        </article>
+    </script>
+
+    <script id="template-list-item" type="text/template">
+
+        <article class="articlePari">
+            <div class="note">
+                <div class="num">{{itemOrder}}</div>
+                <div class="logoJeux">
+                    <a href="{{url}}" class="link external">
+                        <img class="alignnone wp-image-76 size-full" src="{{logo}}" alt="" width="192" height="85">
+                    </a>
+                </div>
+                <div class="surDix">
+                    <p>
+                        <span class="note_txt">Note <span class="bleu">MPS</span></span>
+                    </p>
+                    <p class="bleu">
+                        <b><span class="grand">{{note}}</span><span class="petit">/10</span></b>
+                    </p>
+                </div>
+                <div class="numNotes">
+                    <div id="rateYo{{itemOrder}}" data-rating="{{note}}"></div>
+
+                    <p class="rate-bookmaker mt-10">
+                        <span class="addNote">Noter</span> ( <span class="totalNotes">{{totalNotes}}</span> notes)</span>
+                    </p>
+                </div>
+            </div>
+            <div class="pariez">
+                <p>{{description}} <a href="{{url}}" class="link external bouton" style="font-weight:bold;font-size: 14px!important;margin:0;">PARIEZ</a>
+                </p>
+                <div class="petit gris">
+                    <a href="/bookmaker/{{page_id}}">Voir la fiche</a>
+                </div>
+            </div>
+        </article>
+    </script>
+
+</body>
+
+</html>
