@@ -164,13 +164,19 @@ var app = new Framework7({
                         if (!("bookmaker-site-url" in term_metas)) {
                             term_metas["bookmaker-site-url"] = '<p>&nbsp;</p>';
                         }
+                        if (!("bookmaker-pariez-btn" in term_metas)) {
+                            term_metas["bookmaker-pariez-btn"] = 'PARIEZ';
+                        }
 
+                        
+                        
                         listHtml += templateHtml.replace(/{{id}}/g, dataObjectItem.term.id)
                             .replace(/{{name}}/g, dataObjectItem.term.name)
                             .replace(/{{itemOrder}}/g, parseInt(key) + 1)
                             .replace(/{{logo}}/g, term_metas["bookmaker-logo"])
                             .replace(/{{note}}/g, term_metas["bookmaker-score"])
                             .replace(/{{url}}/g, term_metas["bookmaker-site-url"])
+                            .replace(/{{pariez}}/g, term_metas["bookmaker-pariez-btn"])
                             .replace(/{{page_id}}/g, term_metas["id-fiche-bookmaker"])
                             .replace(/{{description}}/g, term_metas.description.replace('<p></p>', ''))
                             .replace(/{{totalNotes}}/g, term_metas["total-notes"]);
@@ -179,6 +185,7 @@ var app = new Framework7({
                         if ((parseInt(key) + 1) % 5 == 0 && parseInt(key) > 0) {
                             listHtml += banner.innerHTML;
                         }
+                        
                     }
 
                     app.preloader.hide();
@@ -197,6 +204,19 @@ var app = new Framework7({
                             starWidth: "20px"
                         });
 
+                        if(term_metas["bookmaker-site-url"].includes('/bookmaker/')){
+                            //$$('.dynamic_url');
+                            //$$('a').addClass('external'); 
+                            console.log($$('.dynamic_url'));
+                         }
+                    });
+
+                    $$(".dynamic_url").each(function(i){
+                        var link = $$(this).attr('href');
+
+                        if(!link.includes('/bookmaker/')){
+                            $$(this).addClass('external');
+                        }
                     });
 
                     var pickerDevice = app.picker.create({
