@@ -51,11 +51,15 @@ var app = new Framework7({
 
             if (page.name == "actu-promo") {
 
+                var link_btn = $$("#enjoy_promo_btn").attr('href');
+                console.log(link_btn);
+                if(!link_btn.includes('/bookmaker/')){
+                    $$('#enjoy_promo_btn').addClass('external');
+                }
+                
+
                 $$('#rate-app-btn').on('click', function(e) {
-                    console.log('Bonjour ');
-
                     AppRate.promptForRating();
-
                 });
             }
 
@@ -203,12 +207,6 @@ var app = new Framework7({
                             ratedFill: "#eaca06",
                             starWidth: "20px"
                         });
-
-                        if(term_metas["bookmaker-site-url"].includes('/bookmaker/')){
-                            //$$('.dynamic_url');
-                            //$$('a').addClass('external'); 
-                            console.log($$('.dynamic_url'));
-                         }
                     });
 
                     $$(".dynamic_url").each(function(i){
