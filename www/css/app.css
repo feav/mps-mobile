@@ -814,7 +814,7 @@ span.form-icon.icon-list {
     margin-left: 20px;
 }
 
-button.btn-shadow.button.open-preloader,
+button.btn-shadow.button.open-preloader,.btn-shadow.open-preloader,
 .form-submit button {
     margin: auto;
     color: #fff;
@@ -1161,4 +1161,17 @@ a.add-my-vote.sheet-close span {
     position: absolute;
     background-size: cover;
     display: block;
+}
+/**
+Rendre tout la zone du menu cliquable
+**/
+
+#left-panel-menu li > a{
+    padding: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+ }
+#left-panel-menu li {
+padding:0;
 }

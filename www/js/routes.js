@@ -27,19 +27,17 @@ routes = [{
                     } else {
                         // COnvert break line to br
                         data.message = data.message.replace(/\r?\n/g, '<br />');
-
-                        let promo_infos = {};
-
-                        if(data.promo_is_external == true){
-                            promo_infos['promo_url'] = data.promo_external_link_text;
-                        }else{
-                            promo_infos['promo_url'] = data.metas['bookmaker-site-url'];
-                        }
-
-                        resolve({ componentUrl: './pages/page-promo.html' }, {
+                             let promo_infos = {};
+                             
+                             if(data.promo_is_external == true){
+                             promo_infos['promo_url'] = data.promo_external_link_text;
+                             }else{
+                             promo_infos['promo_url'] = data.metas['bookmaker-site-url'];
+                             }
+                             resolve({ componentUrl: './pages/page-promo.html' }, {
                             context: {
                                 promo: data,
-                                promo_infos: promo_infos,
+                                     promo_infos: promo_infos,
                             }
                         });
                     }
