@@ -52,7 +52,7 @@ var app = new Framework7({
             if (page.name == "actu-promo") {
 
                 var link_btn = $$("#enjoy_promo_btn").attr('href');
-                console.log(link_btn);
+                //console.log(link_btn);
                 if(!link_btn.includes('/bookmaker/')){
                     $$('#enjoy_promo_btn').addClass('external');
                 }
@@ -386,6 +386,32 @@ var app = new Framework7({
                                 if (parseInt(data.bookmaker)) {
                                     mainView.router.navigate('/quizz/result/' + parseInt(data.bookmaker));
 
+                                    setTimeout(function(){
+                                        if(data.is_external_url == 'Y'){
+                                            $$('.bookmaker_site').attr('href', data.external_url);
+                                            $$('.bookmaker_site').addClass('external');
+                                        }else{
+                                            var termId = data.bookmaker;
+
+                                            app.request.json(
+                                                app.data.mpsJsonBase + 'bookmaker/item/' + termId, {},
+                                                function(data) {
+                                                    app.preloader.hide();
+
+                                                    $$('.bookmaker_site').attr('href', data.metas['bookmaker-site-url']);
+                                                },
+                                                function(xhr, status) {
+                                                    app.preloader.hide();
+
+                                                    setTimeout(function() {
+                                                        app.dialog.alert('Une érreur est survenue! Vérifiez votre connexion et essayez de nouveau !', 'Echec !');
+                                                    }, 3000);
+                                                }
+                                            );
+                                        }
+                                        
+                                    }, 500);
+
                                 }
                                 // console.log('Load was performed');
                             },
@@ -438,6 +464,7 @@ $$('#my-login-screen .login-button').on('click', function() {
 });
 
 // Option 2. Using live 'page:init' event handlers for each page
+
 $$(document).on('page:beforein', '.page[data-name="qresults"]', function(e, page) {
     // Do something here when page with data-name="about" attribute loaded and initialized
 
@@ -447,10 +474,10 @@ $$(document).on('page:beforein', '.page[data-name="qresults"]', function(e, page
         app.data.mpsJsonBase + 'bookmaker/item/' + termId, {},
         function(data) {
             app.preloader.hide();
-            console.log(data);
+            //console.log(data);
 
             $$('#bookmaker_name').text(data.term.name);
-            $$('.bookmaker_site').attr('href', data.metas['bookmaker-site-url']);
+            //$$('.bookmaker_site').attr('href', data.metas['bookmaker-site-url']);
             $$('.bookmaker_site img').attr('src', data.metas['bookmaker-logo']);
         },
         function(xhr, status) {
@@ -462,6 +489,7 @@ $$(document).on('page:beforein', '.page[data-name="qresults"]', function(e, page
         }
     );
 });
+
 
 
 // On HOme page init
