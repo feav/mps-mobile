@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>966455873609-0u1qe253947cmsf8jekl3me9k8eq7mk5.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.966455873609-0u1qe253947cmsf8jekl3me9k8eq7mk5</string>
+	<key>API_KEY</key>
+	<string>AIzaSyA-BeAw1CYCLAJjRmQzGJ5ENqoGE1oFh48</string>
+	<key>GCM_SENDER_ID</key>
+	<string>966455873609</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.classementparissportifs.iosmobileapp</string>
+	<key>PROJECT_ID</key>
+	<string>classement-paris-sportifs</string>
+	<key>STORAGE_BUCKET</key>
+	<string>classement-paris-sportifs.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:966455873609:ios:eb26ea17767d4a00</string>
+	<key>DATABASE_URL</key>
+	<string>https://classement-paris-sportifs.firebaseio.com</string>
+</dict>
+</plist>
