@@ -509,6 +509,38 @@ function onDeviceReady() {
         usesUntilPrompt: 5,
         promptAgainForEachNewVersion: false,
         inAppReview: true,
+        openUrl : function (url) {
+          if (!window.SafariViewController) {
+            window.open(url, '_blank', 'location=yes');
+          }
+          else {
+            SafariViewController.isAvailable(function (available) {
+                if (available) {
+                  SafariViewController.show({
+                        url: url,
+                        barColor: "#0000ff", // on iOS 10+ you can change the background color as well
+                        controlTintColor: "#00ffff" // on iOS 10+ you can override the default tintColor
+                        tintColor: "#00ffff", // should be set to same value as controlTintColor and will be a fallback on older ios
+                      },
+                      // this success handler will be invoked for the lifecycle events 'opened', 'loaded' and 'closed'
+                      function(result) {
+                        if (result.event === 'opened') {
+                          console.log('opened');
+                        } else if (result.event === 'loaded') {
+                          console.log('loaded');
+                        } else if (result.event === 'closed') {
+                          console.log('closed');
+                        }
+                      },
+                      function(msg) {
+                        console.log("error: " + msg);
+                      })
+                } else {
+                  window.open(url, '_blank', 'location=yes');
+                }
+              });
+          }
+        },
         storeAppURL: {
             ios: 'com.classementparissportifs.mobileapp',
             android: 'market://details?id=com.classementparissportifs.mobileapp',
@@ -529,7 +561,7 @@ function onDeviceReady() {
         },
         callbacks: {
             handleNegativeFeedback: function() {
-                window.open('mailto:feedback@example.com', '_system');
+                window.open('mailto:top10parissportifs@gmail.com', '_system');
             },
             onRateDialogShow: function(callback) {
                 callback(1) // cause immediate click on 'Rate Now' button
@@ -537,7 +569,8 @@ function onDeviceReady() {
             onButtonClicked: function(buttonIndex) {
                 console.log("onButtonClicked -> " + buttonIndex);
             }
-        }
+        },
+        openUrl: AppRate.preferences.openUrl
     };
 
     window.FirebasePlugin.onNotificationOpen(function(notification) {
