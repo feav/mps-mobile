@@ -1,6 +1,9 @@
 // Dom7
 var $$ = Dom7;
-
+document.addEventListener("deviceready", onDeviceReady, false);
+function onDeviceReady() {
+    console.log("window.open works well");
+}
 // Framework7 App main instance
 var app = new Framework7({
     root: '#app', // App root element
@@ -59,7 +62,7 @@ var app = new Framework7({
                 
 
                 $$('#rate-app-btn').on('click', function(e) {
-                    AppRate.promptForRating();
+                    AppRate.promptForRating(true);
                 });
             }
 
